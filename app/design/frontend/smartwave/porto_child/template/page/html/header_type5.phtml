@@ -1,0 +1,36 @@
+<?php echo $this->getChildHtml('sticky.nav') ?>
+<?php
+    $store = Mage::app()->getStore();
+    $code  = $store->getCode();
+    $custom_block = Mage::getStoreConfig('porto_settings/header/static_block', $code);
+?>
+<div class="header-container type5 porto_child">
+    <div class="top-links-container" style="background-color: #f2f2f2;">
+        <div class="top-links container">
+            <p class="welcome-msg" style="float: right; font-weight: bold;">OPEN A SHOP</p>
+            <div class="clearer"></div>
+        </div>
+    </div>
+    <div class="header container">
+        <?php if ($this->getIsHomePage()):?>
+        <h1 class="logo"><strong><?php echo $this->getLogoAlt(); ?></strong><a href="<?php echo $this->getUrl(''); ?>" title="<?php echo $this->getLogoAlt(); ?>" class="logo"><img src="<?php echo $this->getLogoSrc(); ?>" alt="<?php echo $this->getLogoAlt(); ?>" /></a></h1>
+        <?php else:?>
+        <a href="<?php echo $this->getUrl(''); ?>" title="<?php echo $this->getLogoAlt(); ?>" class="logo"><strong><?php echo $this->getLogoAlt(); ?></strong><img src="<?php echo $this->getLogoSrc(); ?>" alt="<?php echo $this->getLogoAlt(); ?>" /></a>
+        <?php endif; ?>
+        <div class="cart-area">
+            <div class="menu-area">
+                <?php echo $this->getChildHtml('topMenu') ?>
+                <div class="menu-icon"><a href="javascript:void(0)" title="<?php echo $this->__('Menu'); ?>"><i class="fa fa-bars"></i></a></div>
+
+                <div class="search-area">
+                    <a href="javascript:void(0);" class="search-icon"><i class="icon-search"></i></a>
+                    <?php echo $this->getChildHtml('topSearch'); ?>
+                </div>
+            </div>
+            <?php echo $this->getChildHtml('minicart'); ?>
+        </div>
+        
+        <?php echo $this->getChildHtml("demo_header_tooltip"); ?>
+    </div>
+</div>
+<?php echo $this->getChildHtml('mobile.nav') ?>

@@ -1,0 +1,9 @@
+a:5:{i:0;s:213:"Error in file: "C:\wamp64\www\magento1932\app\code\local\MasteringMagento\Example\sql\example_setup\mysql4-upgrade-5.1.0-5.2.0.php" - SQLSTATE[42000]: Syntax error or access violation: 1103 Incorrect table name ''";i:1;s:948:"#0 C:\wamp64\www\magento1932\includes\src\Mage_Core_Model_Resource_Setup.php(644): Mage::exception('Mage_Core', 'Error in file: ...')
+#1 C:\wamp64\www\magento1932\includes\src\Mage_Core_Model_Resource_Setup.php(437): Mage_Core_Model_Resource_Setup->_modifyResourceDb('upgrade', '0.0.1', '7.1.0')
+#2 C:\wamp64\www\magento1932\includes\src\Mage_Core_Model_Resource_Setup.php(320): Mage_Core_Model_Resource_Setup->_upgradeResourceDb('0.0.1', '7.1.0')
+#3 C:\wamp64\www\magento1932\includes\src\Mage_Core_Model_Resource_Setup.php(235): Mage_Core_Model_Resource_Setup->applyUpdates()
+#4 C:\wamp64\www\magento1932\includes\src\__default.php(21342): Mage_Core_Model_Resource_Setup::applyAllUpdates()
+#5 C:\wamp64\www\magento1932\includes\src\__default.php(21268): Mage_Core_Model_App->_initModules()
+#6 C:\wamp64\www\magento1932\app\Mage.php(683): Mage_Core_Model_App->run(Array)
+#7 C:\wamp64\www\magento1932\index.php(83): Mage::run('', 'store')
+#8 {main}";s:3:"url";s:13:"/magento1932/";s:11:"script_name";s:22:"/magento1932/index.php";s:4:"skin";s:7:"default";}
