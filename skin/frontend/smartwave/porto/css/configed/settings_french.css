@@ -1,6 +1,6 @@
 /**
  * WARNING: Do not change this file. Your changes will be lost.
- * 2018-08-13 12:48:57 */
+ * 2018-08-15 08:00:35 */
 
 select {
     -webkit-appearance: none;
@@ -1960,6 +1960,7 @@ a.addtowishlist:hover, .link-wishlist:hover, a.comparelink:hover, .link-compare:
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    color:#636370;
 }
 .footer-middle ul.links li,.footer-middle ul.features li {
     padding: 0;
@@ -2500,7 +2501,7 @@ a.ty-text-links__a {
 .ty-footer-grid.footer-copyright:after {
     display: block;
     position: absolute;
-    background: url(../sticky_logo/default/original.png) no-repeat 0 0;
+    background: url(../../images/original.png) no-repeat 0 0;
     width: 96px;
     height: 96px;
     left: 50%;
@@ -2947,4 +2948,15 @@ ul#text_links_1235>li {
 .free_shipping_catalogue_div
 {
     margin: 20px 0;
+}
+.footer-bottom .container .custom-block
+{
+   clear:both;
+}
+.ty-mainbox-simple-container.clearfix.sd-footer-blocks
+{
+    text-align:left;
+}
+.footer-container .footer-bottom .container {
+    padding: 0px 0px;
 }
