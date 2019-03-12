@@ -1,0 +1,3 @@
+http://localhost/magento1932/index.php/admin/dashboard/
+admin	
+admin123
